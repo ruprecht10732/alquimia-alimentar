@@ -1,0 +1,2 @@
+[     341ms] [WARNING] cdn.tailwindcss.com should not be used in production. To use Tailwind CSS in production, install it as a PostCSS plugin or use the Tailwind CLI: https://tailwindcss.com/docs/installation @ https://cdn.tailwindcss.com/:63
+[     476ms] [WARNING] <i data-lucide="instagram" class="w-4 h-4"></i> icon name was not found in the provided icons object. @ https://unpkg.com/lucide@latest:7
