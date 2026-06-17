@@ -1,0 +1,64 @@
+{{define "base"}}<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{block "title" .}}{{.Content.Site.Title}}{{end}}</title>
+    <meta name="description" content="{{block "description" .}}{{.Content.Site.Description}}{{end}}">
+
+    <script src="/static/js/tailwind.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Inter:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet" integrity="sha384-6984O1j9EE7VFYl6j+6O8DpCqXIfK85AywYfi309bwiN/fzdPgiWh5cGlJfUIs3L" crossorigin="anonymous">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        heading: ['Outfit', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif'],
+                        script: ['Caveat', 'cursive'],
+                    },
+                    colors: {
+                        matcha: {
+                            cream: '#F4F7F4',
+                            light: '#E2EBE0',
+                            mid: '#A6C1A4',
+                            dark: '#0A2213',
+                        },
+                        accent: {
+                            DEFAULT: '#FF6B00',
+                            light: '#FFF0E5',
+                        }
+                    },
+                    boxShadow: {
+                        'polaroid': '0 15px 35px rgba(10, 34, 19, 0.08)',
+                        'hard': '4px 4px 0px rgba(10, 34, 19, 1)',
+                        'hard-lg': '8px 8px 0px rgba(10, 34, 19, 1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="/static/css/style.css">
+    {{block "head" .}}{{end}}
+</head>
+<body>
+
+    <div class="noise-bg"></div>
+    <div class="wavy-line-bg"></div>
+
+    {{template "header" .}}
+
+    {{block "content" .}}{{end}}
+
+    {{template "footer" .}}
+
+    {{template "whatsapp" .}}
+
+    <script src="/static/js/main.js"></script>
+    {{block "scripts" .}}{{end}}
+</body>
+</html>{{end}}

@@ -1,0 +1,317 @@
+{{template "base" .}}
+
+{{define "content"}}
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-8 pb-20 md:pt-20 md:pb-32 relative z-10 overflow-hidden">
+        <div class="container-tight">
+            <div class="flex flex-col lg:flex-row gap-12 lg:gap-8 items-center">
+
+                <div class="w-full lg:w-1/2 relative z-20 text-center lg:text-left mt-6 lg:mt-0 reveal">
+
+                    <div class="absolute -top-10 left-0 lg:-left-4 font-script text-2xl sm:text-3xl text-accent -rotate-6 hidden sm:block opacity-90">
+                        {{.Content.Hero.Accent}}
+                        <svg class="w-8 h-8 absolute -right-8 top-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </div>
+
+                    {{$last := sub (len .Content.Hero.Title) 1}}
+                    <h1 class="title-massive text-5xl sm:text-6xl lg:text-[5.5rem] text-matcha-dark mb-6">
+                        {{range $i, $line := .Content.Hero.Title}}
+                        {{- if lt $i $last}}{{- if $i}}<br/>{{end}}{{$line}}{{- end}}
+                        {{- end}}
+                        <span class="relative inline-block text-matcha-dark">
+                            {{index .Content.Hero.Title $last}}
+                            <svg class="absolute w-full h-3 -bottom-1 left-0 text-accent" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 50 10 100 2" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+                        </span>
+                    </h1>
+
+                    <p class="font-sans font-medium text-matcha-dark/80 text-base sm:text-lg mb-10 max-w-md mx-auto lg:mx-0 leading-relaxed">
+                        {{.Content.Hero.Description}}
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-5">
+                        <a href="#consulta" class="btn-pill w-full sm:w-auto justify-center text-sm sm:text-base py-3 px-3 shadow-hard">
+                            <div class="icon-circle">
+                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 19L19 5M19 5v10M19 5H9"/></svg>
+                            </div>
+                            <span>{{.Content.Hero.PrimaryCTA}}</span>
+                        </a>
+                        <a href="#metodo" class="font-bold text-matcha-dark hover:text-accent transition-colors py-3 px-4 uppercase text-xs tracking-widest border-b-2 border-matcha-dark hover:border-accent mt-2 sm:mt-0">
+                            {{.Content.Hero.SecondaryCTA}}
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-1/2 relative flex justify-center items-center mt-12 lg:mt-0 reveal reveal-delay-1">
+
+                    <div class="hidden sm:block absolute polaroid shadow-polaroid -rotate-6 translate-x-12 -translate-y-8 w-[250px] lg:w-[320px] opacity-70">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&h=800&fit=crop" class="w-full h-[300px] object-cover grayscale" alt="">
+                    </div>
+
+                    <div class="relative polaroid shadow-hard rotate-2 z-10 w-[90%] max-w-[360px] transform hover:rotate-0 transition-transform duration-500">
+                        <div class="aspect-[3/4] w-full bg-matcha-mid overflow-hidden relative border border-matcha-dark">
+                            <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover" aria-label="Vídeo decorativo de alimentos frescos" role="img">
+                                <source src="/static/video/Cinematic_macro_shot_of_fresh_.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+                    <div class="absolute -top-4 -left-2 sm:left-4 lg:left-10 w-24 h-24 sm:w-32 sm:h-32 bg-white rounded-full flex flex-col items-center justify-center text-center shadow-hard -rotate-12 z-30 border-2 border-matcha-dark hover:scale-110 transition-transform">
+                        <span class="font-heading font-black text-3xl sm:text-[40px] text-matcha-dark leading-none sm:mt-2">{{.Content.Hero.Badge.Value}}</span>
+                        <span class="text-[7px] sm:text-[9px] font-bold text-matcha-dark/70 uppercase leading-tight mt-1">{{.Content.Hero.Badge.Label}}</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stickers Flutuantes -->
+    <section class="py-8 md:py-16 relative z-10 overflow-hidden reveal">
+        <div class="container-tight max-w-6xl mx-auto">
+
+            <div class="flex flex-col sm:flex-row flex-wrap justify-center items-stretch sm:items-center gap-4 sm:gap-6 lg:gap-8">
+                {{range .Content.Stickers.Items}}
+                <div class="{{if eq .Variant "mid"}}bg-matcha-mid{{else if eq .Variant "dark"}}bg-matcha-dark text-white{{else}}bg-white{{end}} border-2 border-matcha-dark {{if eq .Variant "dark"}}text-white{{else}}text-matcha-dark{{end}} font-heading font-black uppercase text-base sm:text-lg md:text-2xl px-5 py-3 rounded-full shadow-hard transform sm:-rotate-2 hover:rotate-0 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-3 w-full sm:w-auto">
+                    <div class="text-xl md:text-3xl {{if eq .Variant "mid"}}bg-white/40{{else if eq .Variant "dark"}}bg-white/10{{else}}bg-matcha-light{{end}} rounded-full w-8 h-8 md:w-12 md:h-12 flex items-center justify-center border {{if eq .Variant "dark"}}border-white/20{{else}}border-matcha-dark/20{{end}} flex-shrink-0">{{.Emoji}}</div>
+                    <span class="tracking-wide">{{.Label}}</span>
+                </div>
+                {{end}}
+            </div>
+
+            <div class="text-center mt-10 hidden md:block">
+                <div class="font-script text-2xl text-accent rotate-2 inline-flex flex-col items-center animate-bounce">
+                    <span>{{.Content.Stickers.Quote}}</span>
+                    <svg class="w-6 h-6 text-accent/50 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Desafios Expat -->
+    <section id="desafios" class="py-16 lg:py-32 relative z-10">
+        <div class="container-tight">
+
+            <div class="text-center max-w-3xl mx-auto mb-16 lg:mb-20 relative reveal">
+                <div class="absolute -top-8 right-4 md:-top-12 md:right-10 font-script text-2xl md:text-3xl text-accent rotate-6">
+                    {{.Content.Desafios.Accent}}
+                </div>
+
+                <h2 class="title-massive text-4xl sm:text-5xl md:text-6xl text-matcha-dark mb-6">{{.Content.Desafios.Title}}</h2>
+                <p class="font-sans font-medium text-matcha-dark/80 text-lg md:text-xl leading-relaxed px-2">
+                    {{.Content.Desafios.Description}}
+                </p>
+            </div>
+
+            <div class="flex flex-col gap-8 sm:gap-10 lg:gap-16 max-w-5xl mx-auto relative z-20">
+                {{range $i, $card := .Content.Desafios.Cards}}
+                <div class="{{if eq $card.Variant "mid"}}bg-matcha-mid text-matcha-dark{{else if eq $card.Variant "dark"}}bg-matcha-dark text-white/90{{else}}bg-white text-matcha-dark/80{{end}} border-2 border-matcha-dark p-6 sm:p-10 lg:p-12 rounded-[2rem] w-full md:w-[85%] lg:w-[600px] {{if even $i}}md:self-start transform md:-rotate-2{{else}}md:self-end transform md:rotate-2{{end}} shadow-hard hover:rotate-0 transition-all duration-300 reveal {{if not (eq $i 0)}}reveal-delay-{{if eq $i 1}}1{{else}}2{{end}}{{end}} relative">
+                    {{if eq $i 1}}
+                    <div class="absolute -top-4 -right-2 sm:-top-6 sm:-right-4 w-12 h-12 sm:w-14 sm:h-14 bg-accent rounded-full flex items-center justify-center text-white text-2xl sm:text-3xl rotate-12 shadow-md border-2 border-matcha-dark">
+                        <span class="opacity-90">🙂</span>
+                    </div>
+                    {{end}}
+
+                    <div class="w-14 h-14 {{if eq $card.Variant "light"}}bg-matcha-light{{else}}bg-white{{end}} {{if eq $card.Variant "dark"}}border-matcha-dark{{else}}border-matcha-dark{{end}} rounded-full flex items-center justify-center text-2xl mb-6 shadow-sm">{{$card.Emoji}}</div>
+                    <h3 class="font-heading font-black text-3xl sm:text-4xl {{if eq $card.Variant "dark"}}text-white{{else}}text-matcha-dark{{end}} uppercase leading-[0.95] mb-4">{{$card.Title}}</h3>
+                    <p class="{{if eq $card.Variant "dark"}}text-white/90{{else if eq $card.Variant "light"}}text-matcha-dark/80{{else}}text-matcha-dark{{end}} font-medium text-base sm:text-lg leading-relaxed mb-6">
+                        {{$card.Description}}
+                    </p>
+                    <div class="inline-block {{if eq $card.Variant "dark"}}bg-white/10 text-white border-white/20{{else if eq $card.Variant "light"}}bg-matcha-light text-matcha-dark border-matcha-dark{{else}}bg-white text-matcha-dark border-matcha-dark{{end}} font-black text-xs sm:text-sm px-4 py-2 rounded-full uppercase tracking-widest border">
+                        {{$card.Tag}}
+                    </div>
+                </div>
+                {{end}}
+            </div>
+        </div>
+    </section>
+
+    <!-- Método / Pilares -->
+    <section id="metodo" class="py-20 lg:py-32 bg-matcha-light relative z-10 border-y-4 border-matcha-dark overflow-hidden">
+
+        <div class="container-tight relative z-20">
+
+            <div class="text-center mb-16 lg:mb-20 max-w-4xl mx-auto reveal">
+                <div class="font-script text-2xl sm:text-3xl md:text-4xl text-accent mb-4 transform -rotate-3 inline-block">
+                    {{.Content.Metodo.Accent}}
+                </div>
+
+                <h2 class="title-massive text-4xl sm:text-5xl md:text-6xl lg:text-[5.5rem] text-matcha-dark mb-6 leading-[0.9]">
+                    {{.Content.Metodo.Title}}
+                </h2>
+
+                <p class="font-sans font-medium text-matcha-dark/80 text-lg md:text-xl mx-auto mb-10 leading-relaxed px-2">
+                    {{.Content.Metodo.Description}}
+                </p>
+
+                <div class="bg-white text-matcha-dark font-bold text-base sm:text-lg md:text-xl leading-relaxed p-6 sm:p-8 rounded-[1.5rem] sm:rounded-[2rem] border-2 border-matcha-dark shadow-hard max-w-3xl mx-auto transform sm:rotate-1 hover:-rotate-1 transition-transform">
+                    "{{.Content.Metodo.Quote}}"
+                </div>
+            </div>
+
+            <div class="space-y-6 sm:space-y-8 lg:space-y-12 max-w-5xl mx-auto">
+                {{range $i, $pillar := .Content.Metodo.Pillars}}
+                <div class="flex flex-col {{if even $i}}md:flex-row{{else}}md:flex-row-reverse{{end}} items-center md:items-stretch gap-4 md:gap-10 {{if eq $pillar.Variant "mid"}}bg-matcha-mid text-matcha-dark{{else if eq $pillar.Variant "dark"}}bg-matcha-dark text-white/80{{else}}bg-white text-matcha-dark/80{{end}} border-2 border-matcha-dark rounded-[2rem] p-6 sm:p-8 lg:p-12 shadow-hard transform {{if even $i}}md:-rotate-1{{else}}md:rotate-1{{end}} hover:rotate-0 hover:-translate-y-1 transition-all duration-300 reveal {{if not (eq $i 0)}}reveal-delay-{{if eq $i 1}}1{{else}}2{{end}}{{end}}">
+                    <div class="font-heading font-black text-[5rem] md:text-[8rem] {{if eq $pillar.Variant "light"}}text-matcha-mid{{else if eq $pillar.Variant "dark"}}text-matcha-mid/30{{else}}text-matcha-dark/10{{end}} leading-none flex-shrink-0 -mt-2 md:mt-0 {{if not (even $i)}}md:text-right{{end}}">
+                        {{$pillar.Number}}
+                    </div>
+                    <div class="flex flex-col justify-center text-center {{if even $i}}md:text-left{{else}}md:text-right{{end}}">
+                        <h4 class="font-heading font-black uppercase text-2xl sm:text-3xl md:text-4xl {{if eq $pillar.Variant "dark"}}text-white{{else}}text-matcha-dark{{end}} mb-3 leading-none">{{$pillar.Title}}</h4>
+                        <p class="{{if eq $pillar.Variant "dark"}}text-white/80{{else if eq $pillar.Variant "mid"}}text-matcha-dark{{else}}text-matcha-dark/80{{end}} font-medium text-base sm:text-lg leading-relaxed">
+                            {{$pillar.Description}}
+                        </p>
+                    </div>
+                </div>
+                {{end}}
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Magnet -->
+    <section class="py-20 lg:py-24 bg-matcha-dark text-white relative z-10 text-center overflow-hidden">
+        <div class="container-tight relative z-20 reveal">
+            <div class="inline-block bg-white text-matcha-dark font-black font-heading uppercase tracking-widest text-xs sm:text-sm px-5 py-2 rounded-full mb-6 sm:mb-8 transform -rotate-2 border-2 border-matcha-dark shadow-[2px_2px_0px_#FFFFFF]">
+                {{.Content.Lead.Badge}}
+            </div>
+            <h3 class="title-massive text-4xl sm:text-5xl md:text-7xl mb-6 leading-[0.9]">
+                {{.Content.Lead.Title}}
+            </h3>
+            <p class="font-sans font-medium text-matcha-light text-base sm:text-xl max-w-2xl mx-auto mb-10 px-2">
+                {{.Content.Lead.Description}}
+            </p>
+
+            <form class="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-2xl mx-auto" onsubmit="event.preventDefault(); alert('Obrigado! Seu guia será enviado em breve.');">
+                <input type="email" placeholder="{{.Content.Lead.Placeholder}}" required class="px-6 sm:px-8 py-4 sm:py-5 rounded-full bg-white text-matcha-dark border-2 border-transparent font-bold text-base sm:text-lg w-full sm:w-96 focus:outline-none focus:border-accent placeholder:text-matcha-dark/40 shadow-xl text-center sm:text-left">
+                <button type="submit" class="bg-accent hover:bg-accent/90 text-white font-heading font-black text-lg sm:text-xl uppercase px-8 sm:px-10 py-4 sm:py-5 rounded-full transition-colors shadow-hard w-full sm:w-auto active:translate-y-1 active:shadow-none border-2 border-matcha-dark">
+                    {{.Content.Lead.Button}}
+                </button>
+            </form>
+        </div>
+
+        <div class="absolute -top-10 -left-10 text-[150px] sm:text-[300px] opacity-[0.03] select-none pointer-events-none">🛒</div>
+        <div class="absolute -bottom-5 -right-5 text-[100px] sm:text-[200px] opacity-[0.03] select-none pointer-events-none">🥑</div>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section id="sobre" class="py-20 lg:py-32 bg-matcha-cream relative z-10 border-b-4 border-matcha-dark overflow-hidden">
+        <div class="container-tight">
+            <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+                <div class="relative flex justify-center order-2 md:order-1 reveal">
+                    <div class="absolute font-script text-2xl sm:text-3xl text-accent -rotate-12 -left-2 top-0 sm:top-10 z-20">
+                        {{.Content.Sobre.Accent}}
+                    </div>
+
+                    <div class="polaroid shadow-hard border-2 border-matcha-dark rotate-3 hover:rotate-0 transition-transform duration-500 w-[80%] max-w-[320px] lg:max-w-[400px]">
+                        <img src="/static/img/myulla.jpeg" alt="Myulla Mashya" class="w-full aspect-square object-cover bg-matcha-mid border border-matcha-dark/20">
+                    </div>
+                </div>
+
+                <div class="order-1 md:order-2 text-center md:text-left reveal reveal-delay-1">
+                    <h2 class="title-massive text-4xl sm:text-5xl lg:text-6xl text-matcha-dark mb-6 sm:mb-8">
+                        {{range $i, $line := .Content.Sobre.Title}}
+                        {{- if $i}}<br>{{end}}{{$line}}
+                        {{- end}}
+                    </h2>
+
+                    <div class="space-y-4 sm:space-y-6 text-matcha-dark/80 font-medium text-base sm:text-lg">
+                        {{range .Content.Sobre.Paragraphs}}
+                        <p>{{.}}</p>
+                        {{end}}
+                        <div class="bg-matcha-light p-5 sm:p-6 rounded-[1.5rem] border-2 border-matcha-dark transform -rotate-1 mt-6 shadow-hard">
+                            <p class="font-bold text-matcha-dark">
+                                {{.Content.Sobre.Quote}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- A Jornada (Checklists em Blocos) -->
+    <section class="py-20 lg:py-24 bg-white relative z-10 border-b-4 border-matcha-dark">
+        <div class="container-tight">
+            <div class="text-center mb-12 sm:mb-16 reveal">
+                <div class="font-script text-2xl sm:text-3xl text-accent mb-2 sm:mb-4 rotate-2">{{.Content.Jornada.Accent}}</div>
+                <h2 class="title-massive text-4xl sm:text-5xl md:text-7xl text-matcha-dark">{{.Content.Jornada.Title}}</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                {{range $i, $phase := .Content.Jornada.Phases}}
+                <div class="{{if eq $phase.Variant "light"}}bg-matcha-light text-matcha-dark/80{{else if eq $phase.Variant "mid"}}bg-matcha-mid text-matcha-dark{{else if eq $phase.Variant "dark"}}bg-matcha-dark text-white/80{{else}}bg-matcha-cream text-matcha-dark/80{{end}} border-2 border-matcha-dark rounded-[2rem] p-6 sm:p-8 flex flex-col shadow-hard transform hover:-translate-y-2 transition-transform duration-300 reveal {{if not (eq $i 0)}}reveal-delay-{{if eq $i 1}}1{{else}}2{{end}}{{end}}">
+                    <div class="font-heading font-black text-xl {{if eq $phase.Variant "dark"}}text-matcha-light/50{{else if eq $phase.Variant "mid"}}text-matcha-dark/70{{else}}text-matcha-dark/50{{end}} uppercase tracking-widest mb-2">{{$phase.Phase}}</div>
+                    <h4 class="font-heading font-black text-2xl sm:text-3xl uppercase leading-none mb-4 {{if eq $phase.Variant "dark"}}text-white{{else}}text-matcha-dark{{end}}">{{$phase.Title}}</h4>
+                    <p class="font-medium text-base {{if eq $phase.Variant "dark"}}text-white/80{{else if eq $phase.Variant "mid"}}text-matcha-dark{{else}}text-matcha-dark/80{{end}} mb-6 flex-grow">{{$phase.Description}}</p>
+                    <div class="w-12 h-12 rounded-full bg-accent text-white border-2 border-matcha-dark flex items-center justify-center text-2xl mt-auto shadow-sm">✓</div>
+                </div>
+                {{end}}
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="py-20 lg:py-24 bg-matcha-light relative z-10 overflow-hidden">
+        <div class="container-tight">
+            <div class="text-center mb-12 sm:mb-16 relative reveal">
+                <div class="font-script text-2xl sm:text-3xl text-accent mb-2 sm:mb-4 -rotate-3">{{.Content.Depoimentos.Accent}}</div>
+                <h2 class="title-massive text-4xl sm:text-5xl md:text-7xl text-matcha-dark">{{.Content.Depoimentos.Title}}</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
+                {{range .Content.Depoimentos.Testimonials}}
+                <div class="bg-white p-6 sm:p-8 rounded-[2rem] border-2 border-matcha-dark shadow-hard transform {{rotateClass .Rotation}} flex flex-col reveal">
+                    <div class="flex text-accent text-xl sm:text-2xl mb-3 sm:mb-4">★★★★★</div>
+                    <p class="text-matcha-dark font-medium text-sm sm:text-base flex-grow mb-6 sm:mb-8">
+                        "{{.Text}}"
+                    </p>
+                    <div class="flex items-center gap-4 pt-4 border-t-2 border-matcha-light">
+                        <img src="{{.Image}}" alt="{{.Name}}" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border border-matcha-dark/20">
+                        <div>
+                            <h4 class="font-heading font-black text-base sm:text-lg text-matcha-dark leading-tight">{{.Name}}</h4>
+                            <p class="text-[9px] sm:text-[10px] text-matcha-dark/70 font-bold uppercase tracking-wider mt-0.5">{{.Location}}</p>
+                        </div>
+                    </div>
+                </div>
+                {{end}}
+            </div>
+        </div>
+    </section>
+
+    <!-- Consulta CTA Final -->
+    <section id="consulta" class="py-24 sm:py-32 bg-matcha-dark relative z-10 rounded-t-[3rem] sm:rounded-t-[4rem] text-center overflow-hidden">
+
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] sm:w-[800px] sm:h-[800px] bg-matcha-mid/10 rounded-full blur-3xl z-0 pointer-events-none"></div>
+
+        <div class="container-tight relative z-10 reveal">
+            <div class="max-w-4xl mx-auto px-2">
+                <div class="font-script text-3xl sm:text-4xl text-accent mb-4 sm:mb-6 transform -rotate-3">{{.Content.CTA.Accent}}</div>
+
+                <h2 class="title-massive text-5xl sm:text-6xl md:text-[6rem] text-white mb-6 sm:mb-10 leading-[0.9]">
+                    {{.Content.CTA.Title}}
+                </h2>
+
+                <p class="font-sans font-medium text-matcha-light/90 text-lg sm:text-xl max-w-2xl mx-auto mb-10 sm:mb-12 leading-relaxed">
+                    {{.Content.CTA.Description}}
+                </p>
+
+                <a href="https://wa.me/{{.Content.WhatsApp.Phone}}?text=Olá%2C%20Myulla!%20Gostaria%20de%20agendar%20uma%20sessão%20estratégica%20inicial."
+                   target="_blank" rel="noopener noreferrer"
+                   class="inline-flex flex-col sm:flex-row items-center gap-3 sm:gap-4 bg-accent text-white rounded-[2rem] sm:rounded-full p-2 pr-2 sm:pr-8 hover:bg-white hover:text-matcha-dark border-2 border-transparent hover:border-matcha-dark hover:-translate-y-1 transition-all shadow-hard mx-auto group w-full sm:w-auto active:translate-y-0 active:shadow-none">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 bg-white rounded-full flex items-center justify-center text-accent group-hover:bg-matcha-dark group-hover:text-white transition-colors shrink-0 border border-transparent group-hover:border-matcha-dark">
+                        <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 19L19 5M19 5v10M19 5H9"/></svg>
+                    </div>
+                    <span class="font-heading font-black text-xl sm:text-2xl uppercase tracking-wider pb-2 sm:pb-0">{{.Content.CTA.Button}}</span>
+                </a>
+
+                <div class="mt-8 sm:mt-12 bg-matcha-dark/50 inline-block px-4 sm:px-6 py-2 sm:py-3 rounded-full border border-matcha-mid/30">
+                    <p class="text-matcha-cream text-[10px] sm:text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2 sm:gap-3">
+                        <svg class="w-3 h-3 sm:w-4 sm:h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                        {{.Content.CTA.Privacy}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+{{end}}

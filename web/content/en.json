@@ -1,0 +1,206 @@
+{
+  "lang": "en",
+  "site": {
+    "title": "Alquimia Alimentar — Scientific and Cultural Nutrition by Myulla Mashya",
+    "description": "Physiology- and biology-based nutrition for Brazilians in the Netherlands. Reconnect with your essence and transform your health with Myulla Mashya."
+  },
+  "header": {
+    "topbar": "Alquimia Alimentar — Science & Physiology in the Netherlands",
+    "logoSubtitle": "By Myulla Mashya",
+    "nav": [
+      { "label": "Home", "url": "#inicio" },
+      { "label": "Expat Challenges", "url": "#desafios" },
+      { "label": "The Method", "url": "#metodo" },
+      { "label": "About Me", "url": "#sobre" }
+    ],
+    "ctaLabel": "Strategic Session",
+    "mobileCTA": "Free Session",
+    "aria": {
+      "mainNav": "Main navigation",
+      "mobileNav": "Mobile menu",
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu"
+    }
+  },
+  "hero": {
+    "accent": "Physiological Balance",
+    "title": [
+      "Transform",
+      "your health",
+      "and feel",
+      "at home in",
+      "the Netherlands."
+    ],
+    "description": "Clinical and integrative nutrition designed for the biology of Brazilians facing the profound climatic, cultural, and dietary transition in the European ecosystem.",
+    "primaryCTA": "Book a Free Session",
+    "secondaryCTA": "Discover the Method",
+    "badge": {
+      "value": "100%",
+      "label": "Applied Human Physiology"
+    }
+  },
+  "stickers": {
+    "items": [
+      { "emoji": "🔬", "label": "Evidence-Based", "variant": "light" },
+      { "emoji": "🌍", "label": "Expat Specialist", "variant": "mid" },
+      { "emoji": "🇧🇷", "label": "100% in Portuguese", "variant": "dark" }
+    ],
+    "quote": "Your safe harbor!"
+  },
+  "desafios": {
+    "accent": "The Hidden Reality",
+    "title": "How the Dutch ecosystem changes your biology",
+    "description": "Moving countries doesn't just change your address; it changes the inner workings of your cells. Understanding this machinery is the first step toward true balance.",
+    "cards": [
+      {
+        "emoji": "☀️",
+        "title": "Chronic Light Deficit",
+        "description": "The scarcity of UV radiation in the Netherlands drastically reduces Vitamin D synthesis, directly affecting hormonal regulation, immunity, and the neurotransmitters linked to well-being.",
+        "tag": "Hormonal Physiology",
+        "variant": "mid"
+      },
+      {
+        "emoji": "🍞",
+        "title": "Microbiota Disruption",
+        "description": "The abrupt introduction of new local grains, processed dairy, and the 'bread for lunch' culture generates intestinal micro-inflammations and chronic digestive fatigue.",
+        "tag": "Gut Health",
+        "variant": "light"
+      },
+      {
+        "emoji": "❄️",
+        "title": "Thermal Stress",
+        "description": "Constant cold demands extra metabolic effort to maintain a stable temperature. The body compensates by generating anxiety spikes and carbohydrate cravings.",
+        "tag": "Metabolic Adaptation",
+        "variant": "dark"
+      }
+    ]
+  },
+  "metodo": {
+    "accent": "Science with Empathy",
+    "title": "The Three Pillars of Alquimia Alimentar",
+    "description": "We combine the exact biological precision of your body with the affective and cultural context you come from. No rigid diets.",
+    "quote": "Effective nutrition happens when the relentless precision of science meets the emotional eyes of your history with food.",
+    "pillars": [
+      {
+        "number": "01.",
+        "title": "Adaptive Cellular Physiology",
+        "description": "We adjust macronutrients and supplementation with total focus on the European climate. We nourish mitochondria to restore the vital energy that thermal stress silently suppresses.",
+        "variant": "light"
+      },
+      {
+        "number": "02.",
+        "title": "Chronic-Cultural Rescue",
+        "description": "Your affective memory is sacred. Rice, beans, and the flavors of home have a structured place. We map biochemical equivalents in Europe without giving up the pleasure of eating.",
+        "variant": "mid"
+      },
+      {
+        "number": "03.",
+        "title": "Uncomplicated Structure",
+        "description": "No complex spreadsheets. We develop executable strategies for your busy daily life in the Netherlands, focusing on intuitive pantry organization and mental peace.",
+        "variant": "dark"
+      }
+    ]
+  },
+  "lead": {
+    "badge": "Free Practical Guide",
+    "title": "Lost in the Albert Heijn aisles?",
+    "description": "Subscribe to receive the \"Food Equivalence Guide.\" An exclusive manual that translates and maps the best local substitutes to keep your diet precise.",
+    "placeholder": "Your best email",
+    "button": "Download Guide"
+  },
+  "sobre": {
+    "accent": "Roots and History",
+    "title": [
+      "Nice to meet you, I'm Myulla.",
+      "Your bridge between Brazil and Europe."
+    ],
+    "paragraphs": [
+      "My passion for understanding the human body has always been guided by a constant search for harmony, structure, and truth. I studied physiology in depth because I understand that the body responds to the environment, light, affection, and our origins.",
+      "I know the silent impact that the transition to the Netherlands causes. Dealing with climatic stress, the chronic longing for our colors, and European food monotony can dysregulate metabolism and cloud the mind."
+    ],
+    "quote": "My mission is to be the architect of your balance. A safe harbor of welcoming supported by rigorous yet simple real-life strategies."
+  },
+  "jornada": {
+    "accent": "Step by Step",
+    "title": "The Transformation Journey",
+    "phases": [
+      {
+        "phase": "Phase 01",
+        "title": "Welcoming",
+        "description": "Detailed mapping of your habits, physiological complaints, and the pains of transition.",
+        "variant": "cream"
+      },
+      {
+        "phase": "Phase 02",
+        "title": "Analysis",
+        "description": "Meticulous analysis strictly focused on winter demands and systemic stress.",
+        "variant": "light"
+      },
+      {
+        "phase": "Phase 03",
+        "title": "Design",
+        "description": "Delivery of your food ecosystem: structured routines with local foods and affection.",
+        "variant": "mid"
+      },
+      {
+        "phase": "Phase 04",
+        "title": "Follow-up",
+        "description": "Regular check-ins and WhatsApp support to adjust the plan as your body evolves.",
+        "variant": "dark"
+      }
+    ]
+  },
+  "depoimentos": {
+    "accent": "Real Impact",
+    "title": "Stories that inspire",
+    "testimonials": [
+      {
+        "text": "Understanding what the lack of sun was doing to my energy changed everything. Myulla welcomed me and designed a logical plan that fit my routine.",
+        "name": "Alessandra Beatriz",
+        "location": "The Hague, Netherlands",
+        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face&q=80",
+        "rotation": "1"
+      },
+      {
+        "text": "I lived lethargic and eating bread all day. I learned to organize myself in the European kitchen while keeping beans and reclaiming the vitality I needed.",
+        "name": "Carlos Eduardo",
+        "location": "Amsterdam, Netherlands",
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face&q=80",
+        "rotation": "-2"
+      },
+      {
+        "text": "Myulla manages to unite impeccable scientific rigor with rare human sensitivity. I felt that my history and roots were fully understood.",
+        "name": "Fernanda Lima",
+        "location": "Rotterdam, Netherlands",
+        "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face&q=80",
+        "rotation": "2"
+      }
+    ]
+  },
+  "cta": {
+    "accent": "First Online Step",
+    "title": "Ready to recover the harmony of your body?",
+    "description": "Schedule an initial 30-minute strategic video conversation. We will analyze your current life dynamics in the Netherlands and outline the exact path to your vitality.",
+    "button": "Book via WhatsApp",
+    "privacy": "Privacy Guaranteed • Reply within 24h"
+  },
+  "footer": {
+    "tagline": "Alquimia Alimentar — Biological science and soul integrated for the physical and emotional health of Brazilian immigrants on European soil.",
+    "digitalOffice": {
+      "title": "Digital Office",
+      "text": "Online Appointments (EU & BR)",
+      "link": { "label": "contato@alquimiaalimentar.nl", "url": "mailto:contato@alquimiaalimentar.nl" }
+    },
+    "dailyConnection": {
+      "title": "Daily Connection",
+      "text": "Follow biological and food insights on Instagram:",
+      "link": { "label": "@nutri.myurlla", "url": "#" }
+    },
+    "copyright": "© 2026 Alquimia Alimentar. All rights reserved.",
+    "madeWith": "Made with"
+  },
+  "whatsapp": {
+    "phone": "31612345678",
+    "ariaLabel": "Contact via WhatsApp"
+  }
+}

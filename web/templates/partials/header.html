@@ -1,0 +1,89 @@
+{{define "header"}}
+<!-- Topbar -->
+<div class="bg-matcha-dark text-white text-[10px] sm:text-xs tracking-[0.2em] uppercase py-2.5 text-center font-bold relative z-40">
+    {{.Content.Header.Topbar}}
+</div>
+
+<!-- Header Principal -->
+<header id="main-header" class="sticky top-0 z-40 bg-matcha-cream/90 backdrop-blur-lg border-b border-transparent transition-all duration-300">
+    <div class="container-tight py-4">
+        <div class="flex items-center justify-between">
+
+            <a href="#" class="flex flex-col group leading-none">
+                <div class="font-heading font-black text-3xl sm:text-4xl text-matcha-dark tracking-tighter group-hover:scale-105 transition-transform origin-left">
+                    alquimia.
+                </div>
+                <div class="text-[9px] sm:text-[10px] text-matcha-dark/70 font-bold uppercase tracking-widest mt-1">
+                    {{.Content.Header.LogoSubtitle}}
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-6" aria-label="{{.Content.Header.Aria.MainNav}}">
+                {{range .NavLinks}}
+                <a href="{{.URL}}" class="text-sm font-bold text-matcha-dark hover:text-accent transition-colors">{{.Label}}</a>
+                {{end}}
+
+                <a href="#consulta" class="btn-pill ml-4">
+                    <div class="icon-circle">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 19L19 5M19 5v10M19 5H9"/></svg>
+                    </div>
+                    <span class="text-sm">{{.Content.Header.CTALabel}}</span>
+                </a>
+
+                <div class="hidden xl:flex items-center gap-2 text-xs font-black uppercase tracking-wider ml-2">
+                    <a href="/" class="px-2 py-1 rounded-full {{if eq .Lang "pt"}}bg-matcha-dark text-white{{else}}text-matcha-dark hover:text-accent{{end}}">PT</a>
+                    <a href="/en/" class="px-2 py-1 rounded-full {{if eq .Lang "en"}}bg-matcha-dark text-white{{else}}text-matcha-dark hover:text-accent{{end}}">EN</a>
+                    <a href="/nl/" class="px-2 py-1 rounded-full {{if eq .Lang "nl"}}bg-matcha-dark text-white{{else}}text-matcha-dark hover:text-accent{{end}}">NL</a>
+                </div>
+            </nav>
+
+            <!-- Menu Mobile Button -->
+            <button id="mobile-menu-btn" class="lg:hidden p-2.5 text-matcha-dark bg-white border-2 border-matcha-dark rounded-full focus:outline-none shadow-hard active:translate-y-1 active:shadow-none transition-all" aria-label="{{.Content.Header.Aria.OpenMenu}}">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- OVERLAY DO MENU MOBILE -->
+<div id="mobile-menu" class="fixed inset-0 bg-matcha-dark z-[100] transform translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col overflow-hidden">
+
+    <div class="absolute -top-10 -right-10 text-[200px] opacity-[0.03] text-white font-heading font-black pointer-events-none select-none">A.</div>
+
+    <div class="container-tight py-6 flex items-center justify-between relative z-10 w-full">
+        <a href="#" class="mobile-link flex flex-col leading-none">
+            <div class="font-heading font-black text-3xl sm:text-4xl text-white tracking-tighter">
+                alquimia.
+            </div>
+            <div class="text-[9px] sm:text-[10px] text-matcha-mid font-bold uppercase tracking-widest mt-1">
+                {{.Content.Header.LogoSubtitle}}
+            </div>
+        </a>
+        <button id="close-menu-btn" class="p-3 text-matcha-dark bg-white rounded-full focus:outline-none active:scale-95 transition-transform shadow-lg" aria-label="{{.Content.Header.Aria.CloseMenu}}">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+    </div>
+
+    <div class="flex-grow flex flex-col justify-center px-6 sm:px-10 relative z-10">
+        <nav class="space-y-6 sm:space-y-8 w-full" aria-label="{{.Content.Header.Aria.MobileNav}}">
+            {{range $i, $link := .NavLinks}}
+            <a href="{{$link.URL}}" class="mobile-link group flex flex-col gap-1 w-full">
+                <span class="font-script text-xl text-accent">0{{add $i 1}}</span>
+                <span class="font-heading font-black text-5xl sm:text-[4rem] leading-[0.8] text-white active:text-accent transition-colors">{{$link.Label}}.</span>
+            </a>
+            {{end}}
+        </nav>
+    </div>
+
+    <div class="px-6 pb-10 sm:pb-12 relative z-10 w-full mt-auto">
+        <div class="flex items-center justify-center gap-3 mb-6">
+            <a href="/" class="mobile-link w-12 h-12 rounded-full flex items-center justify-center text-sm font-black uppercase border-2 {{if eq .Lang "pt"}}bg-accent text-white border-matcha-dark{{else}}bg-white text-matcha-dark border-matcha-dark{{end}}">PT</a>
+            <a href="/en/" class="mobile-link w-12 h-12 rounded-full flex items-center justify-center text-sm font-black uppercase border-2 {{if eq .Lang "en"}}bg-accent text-white border-matcha-dark{{else}}bg-white text-matcha-dark border-matcha-dark{{end}}">EN</a>
+            <a href="/nl/" class="mobile-link w-12 h-12 rounded-full flex items-center justify-center text-sm font-black uppercase border-2 {{if eq .Lang "nl"}}bg-accent text-white border-matcha-dark{{else}}bg-white text-matcha-dark border-matcha-dark{{end}}">NL</a>
+        </div>
+        <a href="#consulta" class="mobile-link bg-accent text-white font-heading font-black text-2xl py-5 rounded-full uppercase border-2 border-matcha-dark shadow-[4px_4px_0px_#A6C1A4] w-full flex items-center justify-center gap-3 active:translate-y-1 active:shadow-none transition-all">
+            {{.Content.Header.MobileCTA}}
+        </a>
+    </div>
+</div>
+{{end}}
