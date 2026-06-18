@@ -1,12 +1,12 @@
 {
   "lang": "nl",
   "site": {
-    "title": "Alquimia Alimentar — Wetenschappelijke en Culturele Voeding door Myulla Mashya",
-    "description": "Op fysiologie en biologie gebaseerde voeding voor Brazilianen in Nederland. Herconnecteer met je essentie en transformeer je gezondheid met Myulla Mashya."
+    "title": "Alquimia Alimentar — Wetenschappelijke en Sportvoeding door Myulla Christian",
+    "description": "Op fysiologie, focus en biologie gebaseerde voeding voor Brazilianen in Nederland. Herconnecteer met je essentie en transformeer je gezondheid met Myulla Christian."
   },
   "header": {
-    "topbar": "Alquimia Alimentar — Wetenschap & Fysiologie in Nederland",
-    "logoSubtitle": "Door Myulla Mashya",
+    "topbar": "Alquimia Alimentar — Voeding zonder omwegen in Nederland",
+    "logoSubtitle": "Door Myulla Christian",
     "nav": [
       { "label": "Home", "url": "#inicio" },
       { "label": "Expat Uitdagingen", "url": "#desafios" },
@@ -23,7 +23,7 @@
     }
   },
   "hero": {
-    "accent": "Fysiologisch Evenwicht",
+    "accent": "Balans en Focus",
     "title": [
       "Transformeer",
       "je gezondheid",
@@ -31,21 +31,21 @@
       "thuis in",
       "Nederland."
     ],
-    "description": "Klinische en integratieve voeding ontworpen voor de biologie van Brazilianen die de diepgaande klimaat-, cultuur- en voedingsovergang in het Europese ecosysteem doormaken.",
+    "description": "Klinische en sportvoeding ontworpen voor de biologie van Brazilianen die de diepgaande klimaat-, cultuur- en voedingsovergang in het Europese ecosysteem doormaken.",
     "primaryCTA": "Gratis Sessie Inplannen",
     "secondaryCTA": "Ontdek de Methode",
     "badge": {
       "value": "100%",
-      "label": "Toegepaste Menselijke Fysiologie"
+      "label": "Fysiologie en Toegepaste Resultaten"
     }
   },
   "stickers": {
     "items": [
-      { "emoji": "🔬", "label": "Evidence-Based", "variant": "light" },
+      { "emoji": "💪", "label": "Focus op Training", "variant": "light" },
       { "emoji": "🌍", "label": "Expat Specialist", "variant": "mid" },
       { "emoji": "🇧🇷", "label": "100% in het Portugees", "variant": "dark" }
     ],
-    "quote": "Jouw veilige haven!"
+    "quote": "Jouw gezondheid serieus genomen!"
   },
   "desafios": {
     "accent": "De Verborgen Realiteit",
@@ -55,7 +55,7 @@
       {
         "emoji": "☀️",
         "title": "Chronisch Lichttekort",
-        "description": "Het gebrek aan UV-straling in Nederland vermindert de vitamine D-synthese drastisch, wat direct de hormonale regulatie, immuniteit en neurotransmitters die verbonden zijn met welbevinden beïnvloedt.",
+        "description": "Het gebrek aan UV-straling in Nederland vermindert de vitamine D-synthese drastisch, wat direct de hormonale regulatie, immuniteit en de energie om te trainen beïnvloedt.",
         "tag": "Hormonale Fysiologie",
         "variant": "mid"
       },
@@ -69,22 +69,22 @@
       {
         "emoji": "❄️",
         "title": "Thermische Stress",
-        "description": "De constante kou vraagt extra metabole inspanning om een stabiele temperatuur te behouden. Het lichaam compenseert dit met angstpieken en een drang naar koolhydraten.",
+        "description": "De constante kou vraagt extra metabole inspanning. Het lichaam compenseert dit met angstpieken en eetbuien, wat je resultaten in de sportschool en op de weegschaal belemmert.",
         "tag": "Metabole Adaptatie",
         "variant": "dark"
       }
     ]
   },
   "metodo": {
-    "accent": "Wetenschap met Empathie",
+    "accent": "Wetenschap en Emotionele Verantwoordelijkheid",
     "title": "De Drie Pijlers van Alquimia Alimentar",
-    "description": "We combineren de exacte biologische precisie van je lichaam met de affectieve en culturele context waar je vandaan komt. Geen starre diëten.",
-    "quote": "Effectieve voeding ontstaat wanneer de meedogenloze precisie van de wetenschap de ogen van je emotionele geschiedenis met voedeling ontmoet.",
+    "description": "We combineren biologische precisie en focus op training met de affectieve en culturele context waar je vandaan komt. Geen starre diëten, maar echte strategieën.",
+    "quote": "Effectieve voeding ontstaat wanneer de meedogenloze precisie van de wetenschap samengaat met emotionele verantwoordelijkheid voor jouw geschiedenis en routine.",
     "pillars": [
       {
         "number": "01.",
-        "title": "Adaptieve Cellulaire Fysiologie",
-        "description": "We passen macronutriënten en suppletie aan met volledige focus op het Europese klimaat. We voeden de mitochondriën om de vitale energie te herstellen die thermische stress stilzwijgend onderdrukt.",
+        "title": "Fysiologie en Prestaties",
+        "description": "We passen macronutriënten en suppletie aan met volledige focus op het Europese klimaat. We voeden de mitochondriën om je vitale energie voor het dagelijks leven en de sportschool te herstellen.",
         "variant": "light"
       },
       {
@@ -95,8 +95,8 @@
       },
       {
         "number": "03.",
-        "title": "Ongecompliceerde Structuur",
-        "description": "Geen complexe spreadsheets. We ontwikkelen uitvoerbare strategieën voor je drukke dagelijks leven in Nederland, met focus op intuïtieve voorraadkastorganisatie en mentale rust.",
+        "title": "Directe en Ongecompliceerde Structuur",
+        "description": "Geen onrealistische spreadsheets of omwegen. We ontwikkelen uitvoerbare strategieën voor je drukke dagelijks leven in Nederland, met focus op discipline, voorraadkastorganisatie en mentale rust.",
         "variant": "dark"
       }
     ]
@@ -104,21 +104,21 @@
   "lead": {
     "badge": "Gratis Praktische Gids",
     "title": "Verdwaald in de Albert Heijn-gangen?",
-    "description": "Schrijf je in om de \"Gids voor Voedsel Equivalentie\" te ontvangen. Een exclusieve handleiding die de beste lokale vervangers vertaalt en in kaart brengt om je dieet precies te houden.",
+    "description": "Schrijf je in om de \"Gids voor Voedsel Equivalentie\" te ontvangen. Een exclusieve en doeltreffende handleiding die de beste lokale vervangers vertaalt om je dieet gefocust te houden.",
     "placeholder": "Je beste e-mailadres",
     "button": "Gids Downloaden"
   },
   "sobre": {
-    "accent": "Wortels en Geschiedenis",
+    "accent": "Wortels en Essentie",
     "title": [
       "Leuk je te ontmoeten, ik ben Myulla.",
-      "Je brug tussen Brazilië en Europa."
+      "Jouw directe brug tussen de warmte van het Noordoosten en Europa."
     ],
     "paragraphs": [
-      "Mijn passie voor het begrijpen van het menselijk lichaam is altijd geleid door een constante zoektocht naar harmonie, structuur en waarheid. Ik heb fysiologie diepgaand bestudeerd omdat ik begrijp dat het lichaam reageert op de omgeving, licht, affectie en onze oorsprong.",
-      "Ik ken de stille impact die de overgang naar Nederland veroorzaakt. Omgaan met klimaatstress, het chronische verlangen naar onze kleuren en de Europese voedingsmonotonie kunnen de stofwisseling ontregelen en de geest vertroebelen."
+      "Ik kom uit het noordoosten van Brazilië, met sterke wortels in Ceará en Piauí. Ik breng de energie van onze zon mee en een absolute passie voor krachttraining, focus en zelfzorg. In het leven en in mijn vak geloof ik in 'emotionele verantwoordelijkheid': ik ben direct, draai er niet omheen, maar geef me 100% om te zorgen voor, en loyaal te zijn aan, degenen die op mijn werk vertrouwen.",
+      "Ik ken de stille impact die de overgang naar Nederland veroorzaakt. Omgaan met klimaatstress, het gemis van onze warmte en de Europese voedingsmonotonie kunnen lichaam en geest ontregelen. Mijn missie is om je vitaliteit terug te geven met echte strategieën, waarbij ik fysieke topprestaties combineer met de warme ontvangst die je nodig hebt."
     ],
-    "quote": "Mijn missie is om de architect van je evenwicht te zijn. Een veilige haven van welkom ondersteund door rigoureuze maar eenvoudige strategieën voor het echte leven."
+    "quote": "Ik ben de architect van je evenwicht. Een veilige haven met rigoureuze, gefocuste en oprechte strategieën om je lichaam en je dagelijkse routine te transformeren."
   },
   "jornada": {
     "accent": "Stap voor Stap",
@@ -126,50 +126,50 @@
     "phases": [
       {
         "phase": "Fase 01",
-        "title": "Ontvangst",
-        "description": "Gedetailleerde in kaart brengen van je gewoonten, fysiologische klachten en de pijnen van de overgang.",
+        "title": "Echte Ontvangst",
+        "description": "Direct en oordeelvrij in kaart brengen van je gewoonten, trainingsroutine en de pijnen van de Europese overgang.",
         "variant": "cream"
       },
       {
         "phase": "Fase 02",
-        "title": "Analyse",
-        "description": "Zorgvuldige analyse strikt gericht op de eisen van de winter en systemische stress.",
+        "title": "Strategische Analyse",
+        "description": "Zorgvuldige analyse strikt gericht op de eisen van de winter, esthetiek en systemische stress.",
         "variant": "light"
       },
       {
         "phase": "Fase 03",
-        "title": "Ontwerp",
-        "description": "Levering van je voedselecosysteem: gestructureerde routines met lokale voedingsmiddelen en affectie.",
+        "title": "Actieplan",
+        "description": "Levering van je gestructureerde routine: lokale voedingsmiddelen, focus op resultaten en respect voor jouw smaak.",
         "variant": "mid"
       },
       {
         "phase": "Fase 04",
-        "title": "Opvolging",
-        "description": "Regelmatige check-ins en WhatsApp-ondersteuning om het plan aan te passen naarmate je lichaam evolueert.",
+        "title": "Gefocuste Opvolging",
+        "description": "Regelmatige check-ins en WhatsApp-ondersteuning om het plan aan te passen naarmate je lichaam sterker wordt en evolueert.",
         "variant": "dark"
       }
     ]
   },
   "depoimentos": {
     "accent": "Echte Impact",
-    "title": "Verhalen die Inspireren",
+    "title": "Resultaten van wie vertrouwden",
     "testimonials": [
       {
-        "text": "Begrijpen wat het gebrek aan zon met mijn energie deed, veranderde alles. Myulla ontving me en ontwierp een logisch plan dat in mijn routine paste.",
+        "text": "Begrijpen wat het gebrek aan zon met mijn energie deed, veranderde alles. Myulla was super direct, ontving me warm en ontwierp een logisch plan dat mijn trainingen heeft gered.",
         "name": "Alessandra Beatriz",
         "location": "Den Haag, Nederland",
         "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face&q=80",
         "rotation": "1"
       },
       {
-        "text": "Ik leefde lethargisch en at de hele dag brood. Ik leerde mezelf te organiseren in de Europese keuken terwijl ik bonen bleef eten en de vitaliteit herwon die ik nodig had.",
+        "text": "Ik leefde lethargisch en at de hele dag brood. Ik leerde discipline te hebben in de Europese keuken terwijl ik mijn rijst met bonen behield en vitaliteit herwon.",
         "name": "Carlos Eduardo",
         "location": "Amsterdam, Nederland",
         "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face&q=80",
         "rotation": "-2"
       },
       {
-        "text": "Myulla weet een onberispelijke wetenschappelijke degelijkheid te combineren met een zeldzame menselijke gevoeligheid. Ik voelde dat mijn geschiedenis en wortels volledig werden begrepen.",
+        "text": "Myulla heeft een enorme emotionele verantwoordelijkheid. Ze combineert onberispelijke wetenschappelijke degelijkheid met een heerlijke oprechtheid. Mijn resultaten zijn nog nooit zo consistent geweest.",
         "name": "Fernanda Lima",
         "location": "Rotterdam, Nederland",
         "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face&q=80",
@@ -179,13 +179,13 @@
   },
   "cta": {
     "accent": "Eerste Online Stap",
-    "title": "Klaar om de harmonie van je lichaam te herstellen?",
-    "description": "Plan een eerste strategisch videogesprek van 30 minuten. We analyseren je huidige levensdynamiek in Nederland en schetsen het exacte pad naar je vitaliteit.",
+    "title": "Klaar om de harmonie en kracht van je lichaam te herstellen?",
+    "description": "Plan een eerste strategisch videogesprek van 30 minuten. We analyseren je levensdynamiek in Nederland en stippelen het exacte plan uit voor jouw vitaliteit.",
     "button": "Boek via WhatsApp",
     "privacy": "Privacy Gegarandeerd • Antwoord binnen 24u"
   },
   "footer": {
-    "tagline": "Alquimia Alimentar — Biologische wetenschap en ziel geïntegreerd voor de fysieke en emotionele gezondheid van Braziliaanse immigranten op Europese bodem.",
+    "tagline": "Alquimia Alimentar — Biologische wetenschap, focus en ziel geïntegreerd voor de fysieke en emotionele gezondheid van Braziliaanse immigranten op Europese bodem.",
     "digitalOffice": {
       "title": "Digitaal Spreekuur",
       "text": "Online Consultaties (EU & BR)",
@@ -193,11 +193,11 @@
     },
     "dailyConnection": {
       "title": "Dagelijkse Connectie",
-      "text": "Volg biologische en voedingsinzichten op Instagram:",
+      "text": "Volg trainingsroutines, focus en biologische inzichten op Instagram:",
       "link": { "label": "@nutri.myulla", "url": "#" }
     },
     "copyright": "© 2026 Alquimia Alimentar. Alle rechten voorbehouden.",
-    "madeWith": "Gemaakt met"
+    "madeWith": "Gemaakt met ❤️"
   },
   "whatsapp": {
     "phone": "31612345678",
