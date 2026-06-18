@@ -14,6 +14,12 @@ func main() {
 	// Static assets (CSS, JS, images, video).
 	mux.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("web/static"))))
 
+	// Health check endpoint for Coolify / orchestrators.
+	mux.HandleFunc("GET /healthz", func(w http.ResponseWriter, r *http.Request) {
+		w.WriteHeader(http.StatusOK)
+		w.Write([]byte("ok"))
+	})
+
 	// Routes.
 	mux.HandleFunc("GET /{$}", handlers.Home)
 	mux.HandleFunc("GET /en/{$}", handlers.Home)
