@@ -62,11 +62,11 @@ func loadTemplates() (*template.Template, error) {
 		"add": func(a, b int) int { return a + b },
 		"sub": func(a, b int) int { return a - b },
 		"even": func(i int) bool { return i%2 == 0 },
-		"rotateClass": func(r string) string {
+		"rotateClass": func(bp, r string) string {
 			if strings.HasPrefix(r, "-") {
-				return "md:-rotate-" + r[1:]
+				return bp + ":-rotate-" + r[1:]
 			}
-			return "md:rotate-" + r
+			return bp + ":rotate-" + r
 		},
 	}
 

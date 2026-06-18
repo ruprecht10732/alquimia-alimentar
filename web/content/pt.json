@@ -1,206 +1,239 @@
 {
-  "lang": "pt-BR",
-  "site": {
-    "title": "Alquimia Alimentar — Nutrição Científica e Esportiva por Myulla Christian",
-    "description": "Nutrição baseada em fisiologia, foco e biologia para brasileiros na Holanda. Reconecte-se com sua essência e transforme sua saúde com Myulla Christian."
+  "cta": {
+    "accent": "Primeiro passo online",
+    "button": "Agendar via WhatsApp",
+    "description": "Agende uma conversa estratégica inicial de 30 minutos por vídeo. Vamos analisar sua dinâmica de vida na Holanda e traçar o plano exato para a sua vitalidade.",
+    "privacy": "Privacidade garantida • Retorno em 24h",
+    "title": "Pronta para recuperar a harmonia e a força do seu organismo?"
+  },
+  "depoimentos": {
+    "accent": "Impacto real",
+    "testimonials": [
+      {
+        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150\u0026h=150\u0026fit=crop\u0026crop=face\u0026q=80",
+        "location": "Haia, Holanda",
+        "name": "Alessandra Beatriz",
+        "rotation": "1",
+        "text": "Entender o que a falta de sol estava fazendo com a minha energia mudou tudo. A Myulla foi super direta, me acolheu e desenhou um plano lógico que salvou meus treinos."
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150\u0026h=150\u0026fit=crop\u0026crop=face\u0026q=80",
+        "location": "Amsterdam, Holanda",
+        "name": "Carlos Eduardo",
+        "rotation": "-2",
+        "text": "Eu vivia letárgico e comendo pão o dia inteiro. Aprendi a ter disciplina na cozinha europeia mantendo meu arroz com feijão e resgatando a vitalidade."
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150\u0026h=150\u0026fit=crop\u0026crop=face\u0026q=80",
+        "location": "Rotterdam, Holanda",
+        "name": "Fernanda Lima",
+        "rotation": "2",
+        "text": "A Myulla tem uma responsabilidade afetiva enorme. Ela une o rigor impecável da ciência com uma sinceridade maravilhosa. Meus resultados nunca foram tão consistentes."
+      }
+    ],
+    "title": "Resultados de quem confiou"
+  },
+  "desafios": {
+    "accent": "A realidade oculta",
+    "cards": [
+      {
+        "description": "A escassez de radiação UV na Holanda reduz drasticamente a síntese de vitamina D, afetando diretamente a regulação hormonal, a imunidade e a energia para treinar.",
+        "emoji": "☀️",
+        "tag": "Fisiologia hormonal",
+        "title": "O déficit crônico de luz",
+        "variant": "mid"
+      },
+      {
+        "description": "A introdução abrupta de novos cereais locais, laticínios processados e a cultura do 'pão no almoço' gera microinflamações intestinais e fadiga digestiva crônica.",
+        "emoji": "🍞",
+        "tag": "Saúde intestinal",
+        "title": "A ruptura da microbiota",
+        "variant": "light"
+      },
+      {
+        "description": "O frio constante exige um esforço metabólico redobrado. O corpo compensa gerando picos de ansiedade e compulsão, atrapalhando seus resultados na academia e na balança.",
+        "emoji": "❄️",
+        "tag": "Adaptação metabólica",
+        "title": "Estresse térmico",
+        "variant": "dark"
+      }
+    ],
+    "description": "Mudar de país não altera apenas o seu endereço; altera o funcionamento interno das suas células. Entender essa engrenagem é o primeiro passo para o verdadeiro equilíbrio.",
+    "title": "Como o ecossistema holandês altera a sua biologia"
+  },
+  "footer": {
+    "copyright": "© 2026 Alquimia Alimentar. Todos os direitos reservados.",
+    "dailyConnection": {
+      "link": {
+        "label": "@nutri.myulla",
+        "url": "#"
+      },
+      "text": "Acompanhe rotina de treinos, foco e insights biológicos no Instagram:",
+      "title": "Conexão diária"
+    },
+    "digitalOffice": {
+      "link": {
+        "label": "contato@alquimiaalimentar.nl",
+        "url": "mailto:contato@alquimiaalimentar.nl"
+      },
+      "text": "Atendimentos online (UE \u0026 BR)",
+      "title": "Consultório digital"
+    },
+    "madeWith": "Feito com ❤️",
+    "tagline": "Alquimia Alimentar — Ciência biológica, foco e alma integradas em prol da saúde física e emocional dos imigrantes brasileiros em solo europeu."
   },
   "header": {
-    "topbar": "Alquimia Alimentar — Nutrição sem rodeios na Holanda",
-    "logoSubtitle": "Por Myulla Christian",
-    "nav": [
-      { "label": "Início", "url": "#inicio" },
-      { "label": "Desafios Expat", "url": "#desafios" },
-      { "label": "O Método", "url": "#metodo" },
-      { "label": "Sobre Mim", "url": "#sobre" }
-    ],
-    "ctaLabel": "Sessão Estratégica",
-    "mobileCTA": "Sessão Gratuita",
     "aria": {
+      "closeMenu": "Fechar menu",
       "mainNav": "Navegação principal",
       "mobileNav": "Menu mobile",
-      "openMenu": "Abrir menu",
-      "closeMenu": "Fechar menu"
-    }
+      "openMenu": "Abrir menu"
+    },
+    "ctaLabel": "Sessão estratégica",
+    "logoSubtitle": "Por Myulla Christian",
+    "mobileCTA": "Sessão gratuita",
+    "nav": [
+      {
+        "label": "Início",
+        "url": "#inicio"
+      },
+      {
+        "label": "Desafios expat",
+        "url": "#desafios"
+      },
+      {
+        "label": "O método",
+        "url": "#metodo"
+      },
+      {
+        "label": "Sobre mim",
+        "url": "#sobre"
+      }
+    ],
+    "topbar": "Alquimia Alimentar — Nutrição sem rodeios na Holanda"
   },
   "hero": {
-    "accent": "Equilíbrio e Foco",
+    "accent": "Equilíbrio e foco",
+    "badge": {
+      "label": "Fisiologia e resultados aplicados",
+      "value": "100%"
+    },
+    "description": "Nutrição clínica e esportiva desenhada para a biologia dos brasileiros que enfrentam a profunda transição climática, cultural e alimentar no ecossistema europeu.",
+    "primaryCTA": "Agendar sessão gratuita",
+    "secondaryCTA": "Conhecer o método",
     "title": [
       "Transforme",
       "sua saúde",
       "e sinta-se",
       "em casa na",
       "Holanda."
-    ],
-    "description": "Nutrição clínica e esportiva desenhada para a biologia dos brasileiros que enfrentam a profunda transição climática, cultural e alimentar no ecossistema europeu.",
-    "primaryCTA": "Agendar Sessão Gratuita",
-    "secondaryCTA": "Conhecer o Método",
-    "badge": {
-      "value": "100%",
-      "label": "Fisiologia e Resultados Aplicados"
-    }
-  },
-  "stickers": {
-    "items": [
-      { "emoji": "💪", "label": "Foco no Treino", "variant": "light" },
-      { "emoji": "🌍", "label": "Especialista em Expats", "variant": "mid" },
-      { "emoji": "🇧🇷", "label": "100% em Português", "variant": "dark" }
-    ],
-    "quote": "Sua saúde levada a sério!"
-  },
-  "desafios": {
-    "accent": "A Realidade Oculta",
-    "title": "Como o ecossistema holandês altera a sua biologia",
-    "description": "Mudar de país não altera apenas o seu endereço; altera o funcionamento interno das suas células. Entender essa engrenagem é o primeiro passo para o verdadeiro equilíbrio.",
-    "cards": [
-      {
-        "emoji": "☀️",
-        "title": "O Déficit Crônico de Luz",
-        "description": "A escassez de radiação UV na Holanda reduz drasticamente a síntese de Vitamina D, afetando diretamente a regulação hormonal, a imunidade e a energia para treinar.",
-        "tag": "Fisiologia Hormonal",
-        "variant": "mid"
-      },
-      {
-        "emoji": "🍞",
-        "title": "A Ruptura da Microbiota",
-        "description": "A introdução abrupta de novos cereais locais, laticínios processados e a cultura do 'pão no almoço' gera microinflamações intestinais e fadiga digestiva crônica.",
-        "tag": "Saúde Intestinal",
-        "variant": "light"
-      },
-      {
-        "emoji": "❄️",
-        "title": "Estresse Térmico",
-        "description": "O frio constante exige um esforço metabólico redobrado. O corpo compensa gerando picos de ansiedade e compulsão, atrapalhando seus resultados na academia e na balança.",
-        "tag": "Adaptação Metabólica",
-        "variant": "dark"
-      }
     ]
-  },
-  "metodo": {
-    "accent": "Ciência e Responsabilidade Afetiva",
-    "title": "Os Três Pilares da Alquimia Alimentar",
-    "description": "Unimos a precisão biológica e o foco no treino ao contexto afetivo e cultural de onde você veio. Sem dietas engessadas, apenas estratégias reais.",
-    "quote": "A nutrição eficaz acontece quando a precisão implacável da ciência se une à responsabilidade afetiva com a sua história e rotina.",
-    "pillars": [
-      {
-        "number": "01.",
-        "title": "Fisiologia e Performance",
-        "description": "Ajustamos macronutrientes e suplementação com foco total no clima europeu. Nutrimos as mitocôndrias para restaurar a energia vital para o seu dia a dia e para a academia.",
-        "variant": "light"
-      },
-      {
-        "number": "02.",
-        "title": "Resgate Crônico-Cultural",
-        "description": "Sua memória afetiva é sagrada. O arroz, o feijão e os sabores de casa têm espaço estruturado. Mapeamos equivalentes bioquímicos na Europa sem abrir mão do prazer alimentar.",
-        "variant": "mid"
-      },
-      {
-        "number": "03.",
-        "title": "Estrutura Direta e Descomplicada",
-        "description": "Sem planilhas irreais ou rodeios. Desenvolvemos estratégias executáveis para o seu dia a dia corrido na Holanda, focando em disciplina, organização da despensa e paz mental.",
-        "variant": "dark"
-      }
-    ]
-  },
-  "lead": {
-    "badge": "Apoio Prático Gratuito",
-    "title": "Perdido nos corredores do Albert Heijn?",
-    "description": "Inscreva-se para receber o \"Guia de Equivalência Alimentar\". Um manual exclusivo e direto ao ponto que traduz os melhores substitutos locais para manter a sua dieta focada.",
-    "placeholder": "Seu melhor e-mail",
-    "button": "Baixar Guia"
-  },
-  "sobre": {
-    "accent": "Raízes e Essência",
-    "title": [
-      "Prazer, sou Myulla.",
-      "Sua ponte direta entre o calor do Nordeste e a Europa."
-    ],
-    "paragraphs": [
-      "Sou do Nordeste do Brasil, com raízes fortes entre o Ceará e o Piauí. Trago comigo a energia do nosso sol e uma paixão absoluta por musculação, foco e autocuidado. Na vida e na profissão, acredito na 'responsabilidade afetiva': sou direta, sem rodeios, mas me entrego 100% para cuidar e ser leal a quem confia no meu trabalho.",
-      "Sei o impacto silencioso que a transição para a Holanda causa. Lidar com o estresse climático, a falta do nosso calor e a monotonia alimentar europeia pode desregular o corpo e a mente. Minha missão é devolver a sua vitalidade com estratégias reais, combinando alta performance física com o acolhimento que você precisa."
-    ],
-    "quote": "Sou a arquiteta do seu equilíbrio. Um porto seguro com estratégias rigorosas, focadas e sinceras para transformar o seu corpo e a sua rotina real."
   },
   "jornada": {
-    "accent": "O Passo a Passo",
-    "title": "A Jornada da Transformação",
+    "accent": "O passo a passo",
     "phases": [
       {
-        "phase": "Fase 01",
-        "title": "Acolhimento Real",
         "description": "Mapeamento direto e sem julgamentos dos seus hábitos, rotina de treinos e as dores da transição europeia.",
+        "phase": "Fase 01",
+        "title": "Acolhimento real",
         "variant": "cream"
       },
       {
-        "phase": "Fase 02",
-        "title": "Análise Estratégica",
         "description": "Análise minuciosa voltada estritamente para as demandas do inverno, estética e estresse sistêmico.",
+        "phase": "Fase 02",
+        "title": "Análise estratégica",
         "variant": "light"
       },
       {
-        "phase": "Fase 03",
-        "title": "Plano de Ação",
         "description": "A entrega da sua rotina estruturada: alimentos locais, foco nos resultados e respeito ao seu paladar.",
+        "phase": "Fase 03",
+        "title": "Plano de ação",
         "variant": "mid"
       },
       {
-        "phase": "Fase 04",
-        "title": "Acompanhamento Focado",
         "description": "Check-ins regulares e suporte via WhatsApp para ajustar o plano conforme seu corpo ganha força e evolui.",
+        "phase": "Fase 04",
+        "title": "Acompanhamento focado",
         "variant": "dark"
       }
-    ]
+    ],
+    "title": "A jornada da transformação"
   },
-  "depoimentos": {
-    "accent": "Impacto Real",
-    "title": "Resultados de quem confiou",
-    "testimonials": [
+  "lang": "pt-BR",
+  "lead": {
+    "badge": "Apoio prático gratuito",
+    "button": "Baixar guia",
+    "description": "Inscreva-se para receber o \"Guia de equivalência alimentar\". Um manual exclusivo e direto ao ponto que traduz os melhores substitutos locais para manter a sua dieta focada.",
+    "placeholder": "Seu melhor e-mail",
+    "title": "Perdido nos corredores do Albert Heijn?"
+  },
+  "metodo": {
+    "accent": "Ciência e responsabilidade afetiva",
+    "description": "Unimos a precisão biológica e o foco no treino ao contexto afetivo e cultural de onde você veio. Sem dietas engessadas, apenas estratégias reais.",
+    "pillars": [
       {
-        "text": "Entender o que a falta de sol estava fazendo com a minha energia mudou tudo. A Myulla foi super direta, me acolheu e desenhou um plano lógico que salvou meus treinos.",
-        "name": "Alessandra Beatriz",
-        "location": "Haia, Holanda",
-        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face&q=80",
-        "rotation": "1"
+        "description": "Ajustamos macronutrientes e suplementação com foco total no clima europeu. Nutrimos as mitocôndrias para restaurar a energia vital para o seu dia a dia e para a academia.",
+        "number": "01.",
+        "title": "Fisiologia e performance",
+        "variant": "light"
       },
       {
-        "text": "Eu vivia letárgico e comendo pão o dia inteiro. Aprendi a ter disciplina na cozinha europeia mantendo meu arroz com feijão e resgatando a vitalidade.",
-        "name": "Carlos Eduardo",
-        "location": "Amsterdam, Holanda",
-        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face&q=80",
-        "rotation": "-2"
+        "description": "Sua memória afetiva é sagrada. O arroz, o feijão e os sabores de casa têm espaço estruturado. Mapeamos equivalentes bioquímicos na Europa sem abrir mão do prazer alimentar.",
+        "number": "02.",
+        "title": "Resgate crônico-cultural",
+        "variant": "mid"
       },
       {
-        "text": "A Myulla tem uma responsabilidade afetiva enorme. Ela une o rigor impecável da ciência com uma sinceridade maravilhosa. Meus resultados nunca foram tão consistentes.",
-        "name": "Fernanda Lima",
-        "location": "Rotterdam, Holanda",
-        "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face&q=80",
-        "rotation": "2"
+        "description": "Sem planilhas irreais ou rodeios. Desenvolvemos estratégias executáveis para o seu dia a dia corrido na Holanda, focando em disciplina, organização da despensa e paz mental.",
+        "number": "03.",
+        "title": "Estrutura direta e descomplicada",
+        "variant": "dark"
       }
+    ],
+    "quote": "A nutrição eficaz acontece quando a precisão implacável da ciência se une à responsabilidade afetiva com a sua história e rotina.",
+    "title": "Os três pilares da Alquimia Alimentar"
+  },
+  "site": {
+    "description": "Nutrição baseada em fisiologia, foco e biologia para brasileiros na Holanda. Reconecte-se com sua essência e transforme sua saúde com Myulla Christian.",
+    "title": "Alquimia Alimentar — Nutrição científica e esportiva por Myulla Christian"
+  },
+  "sobre": {
+    "accent": "Raízes e essência",
+    "paragraphs": [
+      "Sou de Teresina, no Piauí, com muito orgulho das minhas raízes nordestinas. Trago comigo a energia do nosso sol e uma paixão absoluta por musculação, foco e autocuidado. Na vida e na profissão, acredito na 'responsabilidade afetiva': sou direta, sem rodeios, mas me entrego 100% para cuidar e ser leal a quem confia no meu trabalho.",
+      "Sei o impacto silencioso que a transição para a Holanda causa. Lidar com o estresse climático, a falta do nosso calor e a monotonia alimentar europeia pode desregular o corpo e a mente. Minha missão é devolver a sua vitalidade com estratégias reais, combinando alta performance física com o acolhimento que você precisa."
+    ],
+    "quote": "Sou a arquiteta do seu equilíbrio. Um porto seguro com estratégias rigorosas, focadas e sinceras para transformar o seu corpo e a sua rotina real.",
+    "title": [
+      "Prazer, sou Myulla.",
+      "Sua ponte direta entre o calor de Teresina e a Europa."
     ]
   },
-  "cta": {
-    "accent": "Primeiro Passo Online",
-    "title": "Pronta para recuperar a harmonia e a força do seu organismo?",
-    "description": "Agende uma conversa estratégica inicial de 30 minutos por vídeo. Vamos analisar sua dinâmica de vida na Holanda e traçar o plano exato para a sua vitalidade.",
-    "button": "Agendar Via WhatsApp",
-    "privacy": "Privacidade Garantida • Retorno em 24h"
-  },
-  "footer": {
-    "tagline": "Alquimia Alimentar — Ciência biológica, foco e alma integradas em prol da saúde física e emocional dos imigrantes brasileiros em solo europeu.",
-    "digitalOffice": {
-      "title": "Consultório Digital",
-      "text": "Atendimentos Online (UE & BR)",
-      "link": { "label": "contato@alquimiaalimentar.nl", "url": "mailto:contato@alquimiaalimentar.nl" }
-    },
-    "dailyConnection": {
-      "title": "Conexão Diária",
-      "text": "Acompanhe rotina de treinos, foco e insights biológicos no Instagram:",
-      "link": { "label": "@nutri.myulla", "url": "#" }
-    },
-    "copyright": "© 2026 Alquimia Alimentar. Todos os direitos reservados.",
-    "madeWith": "Feito com ❤️"
+  "stickers": {
+    "items": [
+      {
+        "emoji": "💪",
+        "label": "Foco no treino",
+        "rotation": "-2",
+        "variant": "light"
+      },
+      {
+        "emoji": "🌍",
+        "label": "Especialista em expats",
+        "rotation": "3",
+        "variant": "mid"
+      },
+      {
+        "emoji": "🇧🇷",
+        "label": "100% em português",
+        "rotation": "-1",
+        "variant": "dark"
+      }
+    ],
+    "quote": "Sua saúde levada a sério!"
   },
   "whatsapp": {
-    "phone": "31612345678",
-    "ariaLabel": "Contato WhatsApp"
+    "ariaLabel": "Contato WhatsApp",
+    "phone": "31612345678"
   }
 }

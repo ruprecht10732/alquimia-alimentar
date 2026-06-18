@@ -18,24 +18,26 @@
                 </div>
             </a>
 
-            <nav class="hidden lg:flex items-center gap-6" aria-label="{{.Content.Header.Aria.MainNav}}">
-                {{range .NavLinks}}
-                <a href="{{.URL}}" class="text-sm font-bold text-matcha-dark hover:text-accent transition-colors">{{.Label}}</a>
-                {{end}}
+            <div class="hidden lg:flex items-center gap-6">
+                <nav class="flex items-center gap-6" aria-label="{{.Content.Header.Aria.MainNav}}">
+                    {{range .NavLinks}}
+                    <a href="{{.URL}}" class="text-sm font-bold text-matcha-dark hover:text-accent transition-colors">{{.Label}}</a>
+                    {{end}}
 
-                <a href="#consulta" class="btn-pill ml-4">
-                    <div class="icon-circle">
-                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 19L19 5M19 5v10M19 5H9"/></svg>
-                    </div>
-                    <span class="text-sm">{{.Content.Header.CTALabel}}</span>
-                </a>
+                    <a href="#consulta" class="btn-pill ml-4">
+                        <div class="icon-circle">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 19L19 5M19 5v10M19 5H9"/></svg>
+                        </div>
+                        <span class="text-sm">{{.Content.Header.CTALabel}}</span>
+                    </a>
+                </nav>
 
-                <div class="hidden xl:flex items-center gap-2 text-xs font-black uppercase tracking-wider ml-2">
-                    <a href="/" class="px-2 py-1 rounded-full {{if eq .Lang "pt"}}bg-matcha-dark text-white{{else}}text-matcha-dark hover:text-accent{{end}}">PT</a>
-                    <a href="/en/" class="px-2 py-1 rounded-full {{if eq .Lang "en"}}bg-matcha-dark text-white{{else}}text-matcha-dark hover:text-accent{{end}}">EN</a>
-                    <a href="/nl/" class="px-2 py-1 rounded-full {{if eq .Lang "nl"}}bg-matcha-dark text-white{{else}}text-matcha-dark hover:text-accent{{end}}">NL</a>
+                <div class="hidden xl:flex items-center gap-2 text-xs font-black uppercase tracking-wider pl-2 border-l-2 border-matcha-dark/10">
+                    <a href="/" class="px-2 py-1 rounded-full transition-colors {{if eq .Lang "pt"}}bg-matcha-dark text-white{{else}}text-matcha-dark hover:text-accent hover:bg-matcha-dark/5{{end}}">PT</a>
+                    <a href="/en/" class="px-2 py-1 rounded-full transition-colors {{if eq .Lang "en"}}bg-matcha-dark text-white{{else}}text-matcha-dark hover:text-accent hover:bg-matcha-dark/5{{end}}">EN</a>
+                    <a href="/nl/" class="px-2 py-1 rounded-full transition-colors {{if eq .Lang "nl"}}bg-matcha-dark text-white{{else}}text-matcha-dark hover:text-accent hover:bg-matcha-dark/5{{end}}">NL</a>
                 </div>
-            </nav>
+            </div>
 
             <!-- Menu Mobile Button -->
             <button id="mobile-menu-btn" class="lg:hidden p-2.5 text-matcha-dark bg-white border-2 border-matcha-dark rounded-full focus:outline-none shadow-hard active:translate-y-1 active:shadow-none transition-all" aria-label="{{.Content.Header.Aria.OpenMenu}}">
@@ -69,7 +71,7 @@
             {{range $i, $link := .NavLinks}}
             <a href="{{$link.URL}}" class="mobile-link group flex flex-col gap-1 w-full">
                 <span class="font-script text-xl text-accent">0{{add $i 1}}</span>
-                <span class="font-heading font-black text-5xl sm:text-[4rem] leading-[0.8] text-white active:text-accent transition-colors">{{$link.Label}}.</span>
+                <span class="title-massive heading-card text-white active:text-accent transition-colors">{{$link.Label}}.</span>
             </a>
             {{end}}
         </nav>
@@ -77,9 +79,9 @@
 
     <div class="px-6 pb-10 sm:pb-12 relative z-10 w-full mt-auto">
         <div class="flex items-center justify-center gap-3 mb-6">
-            <a href="/" class="mobile-link w-12 h-12 rounded-full flex items-center justify-center text-sm font-black uppercase border-2 {{if eq .Lang "pt"}}bg-accent text-white border-matcha-dark{{else}}bg-white text-matcha-dark border-matcha-dark{{end}}">PT</a>
-            <a href="/en/" class="mobile-link w-12 h-12 rounded-full flex items-center justify-center text-sm font-black uppercase border-2 {{if eq .Lang "en"}}bg-accent text-white border-matcha-dark{{else}}bg-white text-matcha-dark border-matcha-dark{{end}}">EN</a>
-            <a href="/nl/" class="mobile-link w-12 h-12 rounded-full flex items-center justify-center text-sm font-black uppercase border-2 {{if eq .Lang "nl"}}bg-accent text-white border-matcha-dark{{else}}bg-white text-matcha-dark border-matcha-dark{{end}}">NL</a>
+            <a href="/" class="mobile-link w-12 h-12 rounded-full flex items-center justify-center text-sm font-black uppercase border-2 transition-colors {{if eq .Lang "pt"}}bg-matcha-dark text-white border-matcha-dark{{else}}bg-white text-matcha-dark border-matcha-dark hover:bg-matcha-dark/10{{end}}">PT</a>
+            <a href="/en/" class="mobile-link w-12 h-12 rounded-full flex items-center justify-center text-sm font-black uppercase border-2 transition-colors {{if eq .Lang "en"}}bg-matcha-dark text-white border-matcha-dark{{else}}bg-white text-matcha-dark border-matcha-dark hover:bg-matcha-dark/10{{end}}">EN</a>
+            <a href="/nl/" class="mobile-link w-12 h-12 rounded-full flex items-center justify-center text-sm font-black uppercase border-2 transition-colors {{if eq .Lang "nl"}}bg-matcha-dark text-white border-matcha-dark{{else}}bg-white text-matcha-dark border-matcha-dark hover:bg-matcha-dark/10{{end}}">NL</a>
         </div>
         <a href="#consulta" class="mobile-link bg-accent text-white font-heading font-black text-2xl py-5 rounded-full uppercase border-2 border-matcha-dark shadow-[4px_4px_0px_#A6C1A4] w-full flex items-center justify-center gap-3 active:translate-y-1 active:shadow-none transition-all">
             {{.Content.Header.MobileCTA}}

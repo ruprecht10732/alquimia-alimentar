@@ -78,9 +78,10 @@ type Stickers struct {
 
 // Sticker is a single floating pill.
 type Sticker struct {
-	Emoji   string `json:"emoji"`
-	Label   string `json:"label"`
-	Variant string `json:"variant"`
+	Emoji    string `json:"emoji"`
+	Label    string `json:"label"`
+	Variant  string `json:"variant"`
+	Rotation string `json:"rotation"`
 }
 
 // Desafios holds the "expat challenges" section.

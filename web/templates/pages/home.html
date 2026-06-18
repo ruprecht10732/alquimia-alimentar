@@ -14,7 +14,7 @@
                     </div>
 
                     {{$last := sub (len .Content.Hero.Title) 1}}
-                    <h1 class="title-massive text-5xl sm:text-6xl lg:text-[5.5rem] text-matcha-dark mb-6">
+                    <h1 class="title-massive heading-hero text-matcha-dark mb-6">
                         {{range $i, $line := .Content.Hero.Title}}
                         {{- if lt $i $last}}{{- if $i}}<br/>{{end}}{{$line}}{{- end}}
                         {{- end}}
@@ -31,7 +31,7 @@
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-5">
                         <a href="#consulta" class="btn-pill w-full sm:w-auto justify-center text-sm sm:text-base py-3 px-3 shadow-hard">
                             <div class="icon-circle">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 19L19 5M19 5v10M19 5H9"/></svg>
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 19L19 5M19 5v10M19 5H9"/></svg>
                             </div>
                             <span>{{.Content.Hero.PrimaryCTA}}</span>
                         </a>
@@ -71,7 +71,7 @@
 
             <div class="flex flex-col sm:flex-row flex-wrap justify-center items-stretch sm:items-center gap-4 sm:gap-6 lg:gap-8">
                 {{range .Content.Stickers.Items}}
-                <div class="{{if eq .Variant "mid"}}bg-matcha-mid{{else if eq .Variant "dark"}}bg-matcha-dark text-white{{else}}bg-white{{end}} border-2 border-matcha-dark {{if eq .Variant "dark"}}text-white{{else}}text-matcha-dark{{end}} font-heading font-black uppercase text-base sm:text-lg md:text-2xl px-5 py-3 rounded-full shadow-hard transform sm:-rotate-2 hover:rotate-0 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-3 w-full sm:w-auto">
+                <div class="{{if eq .Variant "mid"}}bg-matcha-mid{{else if eq .Variant "dark"}}bg-matcha-dark{{else}}bg-white{{end}} border-2 border-matcha-dark {{if eq .Variant "dark"}}text-white{{else}}text-matcha-dark{{end}} font-heading font-black uppercase text-base sm:text-lg md:text-2xl px-5 py-3 rounded-full shadow-hard transform {{rotateClass "sm" .Rotation}} hover:rotate-0 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-3 w-full sm:w-auto">
                     <div class="text-xl md:text-3xl {{if eq .Variant "mid"}}bg-white/40{{else if eq .Variant "dark"}}bg-white/10{{else}}bg-matcha-light{{end}} rounded-full w-8 h-8 md:w-12 md:h-12 flex items-center justify-center border {{if eq .Variant "dark"}}border-white/20{{else}}border-matcha-dark/20{{end}} flex-shrink-0">{{.Emoji}}</div>
                     <span class="tracking-wide">{{.Label}}</span>
                 </div>
@@ -97,7 +97,7 @@
                     {{.Content.Desafios.Accent}}
                 </div>
 
-                <h2 class="title-massive text-4xl sm:text-5xl md:text-6xl text-matcha-dark mb-6">{{.Content.Desafios.Title}}</h2>
+                <h2 class="title-massive heading-section text-matcha-dark mb-6">{{.Content.Desafios.Title}}</h2>
                 <p class="font-sans font-medium text-matcha-dark/80 text-lg md:text-xl leading-relaxed px-2">
                     {{.Content.Desafios.Description}}
                 </p>
@@ -113,7 +113,7 @@
                     {{end}}
 
                     <div class="w-14 h-14 {{if eq $card.Variant "light"}}bg-matcha-light{{else}}bg-white{{end}} {{if eq $card.Variant "dark"}}border-matcha-dark{{else}}border-matcha-dark{{end}} rounded-full flex items-center justify-center text-2xl mb-6 shadow-sm">{{$card.Emoji}}</div>
-                    <h3 class="font-heading font-black text-3xl sm:text-4xl {{if eq $card.Variant "dark"}}text-white{{else}}text-matcha-dark{{end}} uppercase leading-[0.95] mb-4">{{$card.Title}}</h3>
+                    <h3 class="title-massive heading-card {{if eq $card.Variant "dark"}}text-white{{else}}text-matcha-dark{{end}} mb-4">{{$card.Title}}</h3>
                     <p class="{{if eq $card.Variant "dark"}}text-white/90{{else if eq $card.Variant "light"}}text-matcha-dark/80{{else}}text-matcha-dark{{end}} font-medium text-base sm:text-lg leading-relaxed mb-6">
                         {{$card.Description}}
                     </p>
@@ -136,7 +136,7 @@
                     {{.Content.Metodo.Accent}}
                 </div>
 
-                <h2 class="title-massive text-4xl sm:text-5xl md:text-6xl lg:text-[5.5rem] text-matcha-dark mb-6 leading-[0.9]">
+                <h2 class="title-massive heading-section text-matcha-dark mb-6">
                     {{.Content.Metodo.Title}}
                 </h2>
 
@@ -156,7 +156,7 @@
                         {{$pillar.Number}}
                     </div>
                     <div class="flex flex-col justify-center text-center {{if even $i}}md:text-left{{else}}md:text-right{{end}}">
-                        <h4 class="font-heading font-black uppercase text-2xl sm:text-3xl md:text-4xl {{if eq $pillar.Variant "dark"}}text-white{{else}}text-matcha-dark{{end}} mb-3 leading-none">{{$pillar.Title}}</h4>
+                        <h4 class="title-massive heading-card {{if eq $pillar.Variant "dark"}}text-white{{else}}text-matcha-dark{{end}} mb-3">{{$pillar.Title}}</h4>
                         <p class="{{if eq $pillar.Variant "dark"}}text-white/80{{else if eq $pillar.Variant "mid"}}text-matcha-dark{{else}}text-matcha-dark/80{{end}} font-medium text-base sm:text-lg leading-relaxed">
                             {{$pillar.Description}}
                         </p>
@@ -173,7 +173,7 @@
             <div class="inline-block bg-white text-matcha-dark font-black font-heading uppercase tracking-widest text-xs sm:text-sm px-5 py-2 rounded-full mb-6 sm:mb-8 transform -rotate-2 border-2 border-matcha-dark shadow-[2px_2px_0px_#FFFFFF]">
                 {{.Content.Lead.Badge}}
             </div>
-            <h3 class="title-massive text-4xl sm:text-5xl md:text-7xl mb-6 leading-[0.9]">
+            <h3 class="title-massive heading-section mb-6">
                 {{.Content.Lead.Title}}
             </h3>
             <p class="font-sans font-medium text-matcha-light text-base sm:text-xl max-w-2xl mx-auto mb-10 px-2">
@@ -208,7 +208,7 @@
                 </div>
 
                 <div class="order-1 md:order-2 text-center md:text-left reveal reveal-delay-1">
-                    <h2 class="title-massive text-4xl sm:text-5xl lg:text-6xl text-matcha-dark mb-6 sm:mb-8">
+                    <h2 class="title-massive heading-section text-matcha-dark mb-6 sm:mb-8">
                         {{range $i, $line := .Content.Sobre.Title}}
                         {{- if $i}}<br>{{end}}{{$line}}
                         {{- end}}
@@ -235,14 +235,14 @@
         <div class="container-tight">
             <div class="text-center mb-12 sm:mb-16 reveal">
                 <div class="font-script text-2xl sm:text-3xl text-accent mb-2 sm:mb-4 rotate-2">{{.Content.Jornada.Accent}}</div>
-                <h2 class="title-massive text-4xl sm:text-5xl md:text-7xl text-matcha-dark">{{.Content.Jornada.Title}}</h2>
+                <h2 class="title-massive heading-section text-matcha-dark">{{.Content.Jornada.Title}}</h2>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
                 {{range $i, $phase := .Content.Jornada.Phases}}
                 <div class="{{if eq $phase.Variant "light"}}bg-matcha-light text-matcha-dark/80{{else if eq $phase.Variant "mid"}}bg-matcha-mid text-matcha-dark{{else if eq $phase.Variant "dark"}}bg-matcha-dark text-white/80{{else}}bg-matcha-cream text-matcha-dark/80{{end}} border-2 border-matcha-dark rounded-[2rem] p-6 sm:p-8 flex flex-col shadow-hard transform hover:-translate-y-2 transition-transform duration-300 reveal {{if not (eq $i 0)}}reveal-delay-{{if eq $i 1}}1{{else}}2{{end}}{{end}}">
                     <div class="font-heading font-black text-xl {{if eq $phase.Variant "dark"}}text-matcha-light/50{{else if eq $phase.Variant "mid"}}text-matcha-dark/70{{else}}text-matcha-dark/50{{end}} uppercase tracking-widest mb-2">{{$phase.Phase}}</div>
-                    <h4 class="font-heading font-black text-2xl sm:text-3xl uppercase leading-none mb-4 {{if eq $phase.Variant "dark"}}text-white{{else}}text-matcha-dark{{end}}">{{$phase.Title}}</h4>
+                    <h4 class="title-massive heading-sm mb-4 {{if eq $phase.Variant "dark"}}text-white{{else}}text-matcha-dark{{end}}">{{$phase.Title}}</h4>
                     <p class="font-medium text-base {{if eq $phase.Variant "dark"}}text-white/80{{else if eq $phase.Variant "mid"}}text-matcha-dark{{else}}text-matcha-dark/80{{end}} mb-6 flex-grow">{{$phase.Description}}</p>
                     <div class="w-12 h-12 rounded-full bg-accent text-white border-2 border-matcha-dark flex items-center justify-center text-2xl mt-auto shadow-sm">✓</div>
                 </div>
@@ -256,21 +256,21 @@
         <div class="container-tight">
             <div class="text-center mb-12 sm:mb-16 relative reveal">
                 <div class="font-script text-2xl sm:text-3xl text-accent mb-2 sm:mb-4 -rotate-3">{{.Content.Depoimentos.Accent}}</div>
-                <h2 class="title-massive text-4xl sm:text-5xl md:text-7xl text-matcha-dark">{{.Content.Depoimentos.Title}}</h2>
+                <h2 class="title-massive heading-section text-matcha-dark">{{.Content.Depoimentos.Title}}</h2>
             </div>
 
             <div class="grid md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
-                {{range .Content.Depoimentos.Testimonials}}
-                <div class="bg-white p-6 sm:p-8 rounded-[2rem] border-2 border-matcha-dark shadow-hard transform {{rotateClass .Rotation}} flex flex-col reveal">
+                {{range $i, $t := .Content.Depoimentos.Testimonials}}
+                <div class="bg-white p-6 sm:p-8 rounded-[2rem] border-2 border-matcha-dark shadow-hard transform {{rotateClass "md" $t.Rotation}} flex flex-col reveal {{if not (eq $i 0)}}reveal-delay-{{if eq $i 1}}1{{else}}2{{end}}{{end}}">
                     <div class="flex text-accent text-xl sm:text-2xl mb-3 sm:mb-4">★★★★★</div>
                     <p class="text-matcha-dark font-medium text-sm sm:text-base flex-grow mb-6 sm:mb-8">
-                        "{{.Text}}"
+                        "{{$t.Text}}"
                     </p>
                     <div class="flex items-center gap-4 pt-4 border-t-2 border-matcha-light">
-                        <img src="{{.Image}}" alt="{{.Name}}" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border border-matcha-dark/20">
+                        <img src="{{$t.Image}}" alt="{{$t.Name}}" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border border-matcha-dark/20">
                         <div>
-                            <h4 class="font-heading font-black text-base sm:text-lg text-matcha-dark leading-tight">{{.Name}}</h4>
-                            <p class="text-[9px] sm:text-[10px] text-matcha-dark/70 font-bold uppercase tracking-wider mt-0.5">{{.Location}}</p>
+                            <h4 class="font-heading font-black text-base sm:text-lg text-matcha-dark leading-tight">{{$t.Name}}</h4>
+                            <p class="text-[9px] sm:text-[10px] text-matcha-dark/70 font-bold uppercase tracking-wider mt-0.5">{{$t.Location}}</p>
                         </div>
                     </div>
                 </div>
@@ -288,7 +288,7 @@
             <div class="max-w-4xl mx-auto px-2">
                 <div class="font-script text-3xl sm:text-4xl text-accent mb-4 sm:mb-6 transform -rotate-3">{{.Content.CTA.Accent}}</div>
 
-                <h2 class="title-massive text-5xl sm:text-6xl md:text-[6rem] text-white mb-6 sm:mb-10 leading-[0.9]">
+                <h2 class="title-massive heading-section text-white mb-6 sm:mb-10">
                     {{.Content.CTA.Title}}
                 </h2>
 
